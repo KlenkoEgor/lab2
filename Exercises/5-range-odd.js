@@ -3,6 +3,15 @@
 // Implement function `rangeOdd(start: number, end: number)` returning
 // array with all odd numbers from the range [15, 30] including endpoints
 
-const rangeOdd = null;
+const rangeOdd = (sNumber, eNumber) => {
+	let array = [];
+	for(let i = sNumber; i <= eNumber; i++ ) {
+		if (i % 2 === 0) {
+			continue;
+		}
+		array.push(i);
+	}
+	return array;
+};
 
 module.exports = { rangeOdd };
